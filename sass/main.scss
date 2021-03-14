@@ -1,11 +1,9 @@
-/*
-COLORS:
+$color-primary: #7ed56f;
+$color-primary-light: #55c57a;
+$color-primary-dark: #28b485;
 
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
+$color-grey-dark: #777;
+$color-white: #fff;
 
 /* Adding universal reset so every browser acts the same. Each browser adds different margin and paddings */
 *,
@@ -26,7 +24,7 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   /* Adds the empty padding around the whole body */
   padding: 3rem;
 
@@ -36,7 +34,11 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #7ed56fd8, #28b485d8),
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
     url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
@@ -70,7 +72,7 @@ body {
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
 
   backface-visibility: hidden;
@@ -170,8 +172,8 @@ body {
 }
 
 .btn--white {
-  background-color: #fff;
-  color: #777;
+  background-color: $color-white;
+  color: $color-grey-dark;
 }
 
 .btn::after {
@@ -191,7 +193,7 @@ body {
 }
 
 .btn-white::after {
-  background-color: #fff;
+  background-color: $color-white;
 }
 
 .btn:hover::after {
