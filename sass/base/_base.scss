@@ -1,0 +1,18 @@
+/* Adding universal reset so every browser acts the same. Each browser adds different margin and paddings */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* Using % enables the user to change the font size, zooming in and out. Default browser font size is 16px. 62.5% = 10px. Defines what 1 rem is*/
+  font-size: 62.5%;
+}
+
+body {
+  /* remove margins and paddings from total width and height of elements */
+  box-sizing: border-box;
+}
