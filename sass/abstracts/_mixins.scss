@@ -1,0 +1,8 @@
+@mixin clearfix {
+  &::after {
+    // Required so this pseudo class appears on the page, but without any content
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
