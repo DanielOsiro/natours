@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm rum compile:sass\" \"npm run live-server\"",
-    "compile:sass": "node-sass ./sass/main.scss ./css/style.css -w",
+    "dev": "concurrently \"npm rum sass\" \"npm run live-server\"",
+    "sass": "sass sass/main.scss css/style.css --watch",
     "live-server": "live-server"
   },
   "author": "",
@@ -13,6 +13,6 @@
   "devDependencies": {
     "concurrently": "^6.0.0",
     "live-server": "^1.2.1",
-    "node-sass": "^5.0.0"
+    "sass": "^1.32.8"
   }
 }
