@@ -18,6 +18,7 @@
     );
     // Clips background color to text only
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
   }
 
