@@ -19,7 +19,7 @@
     // Hides the back side of the card when rotating
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 0.3rem;
+    border-radius: $default-radius;
     // Hide background image sharp corners
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
