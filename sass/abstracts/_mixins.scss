@@ -28,6 +28,8 @@ $breakpoint argument choices:
 - tab-land
 - big-desktop
 
+ORDER: Base + typography > general layout + grid > page layout > components
+
 The standard is to use em instead of rem.
 Media queries use the default font size defined by the user's browser (16px) and not the one set in our html styling.
 1em = 16px

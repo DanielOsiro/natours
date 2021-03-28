@@ -34,4 +34,10 @@ html {
 body {
   /* remove margins and paddings from total width and height of elements */
   box-sizing: border-box;
+  /* Adds the empty padding around the whole body */
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
