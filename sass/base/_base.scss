@@ -8,8 +8,27 @@
 }
 
 html {
-  /* Using % enables the user to change the font size, zooming in and out. Default browser font size is 16px. 62.5% = 10px. Defines what 1 rem is*/
+  /* 
+  Defines what 1 rem is.
+  Using % enables the user to change the font size, zooming in and out.
+  Default browser font size is 16px. 62.5% = 10px.
+  */
   font-size: 62.5%;
+
+  /* 
+  The order is important, because if the tab-land breakpoint is reached,
+  both the tab-land and tab-port will be applied, but only the last style
+  will be applied.
+  */
+  @include respond(tab-land) {
+    font-size: 56.25%; // 9px
+  }
+  @include respond(tab-port) {
+    font-size: 50%; // 8px
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; // 12px
+  }
 }
 
 body {
